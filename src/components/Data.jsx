@@ -133,6 +133,7 @@ function Data() {
                 fetchData();
                 toast.success('Password added successfully!');
                 window.scrollTo(0, 0);
+                setUsername('');
                 setWebsite('');
                 setPassword('');
                 togglePopup();
