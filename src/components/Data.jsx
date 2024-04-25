@@ -204,7 +204,7 @@ function Data() {
                                         </div>
                                         <form className='flex flex-col gap-4'>
                                             <label htmlFor="dob" className="block text-sm text-gray-600">Enter your DOB (dd-mm-yy)</label>
-                                            <input id="dob" className="w-full rounded-lg bg-[transparent] border border-gray-200 p-4 pe-12 text-sm shadow-sm" type="date" value={dob} onChange={(e) => setDob(e.target.value)} required />
+                                            <input id="dob" className="w-full rounded-lg bg-[transparent] border border-gray-200 p-4 text-sm shadow-sm" type="date" value={dob} onChange={(e) => setDob(e.target.value)} required />
                                             <button className="w-full inline-block rounded-lg bg-[#757493] px-5 py-3 text-sm font-medium text-white"
                                                 onClick={checkDob}>Authenticate</button> {/* Pass the event to the checkDob function */}
 
