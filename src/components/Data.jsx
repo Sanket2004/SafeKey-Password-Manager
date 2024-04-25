@@ -160,7 +160,7 @@ function Data() {
             <div className='relative mx-auto max-w-screen-xl h-auto px-8 lg:px-10 mt-44 grid grid-cols-1 md:grid-cols-2 gap-6'>
                 {passwords.length > 0 ? (
                     passwords.map((password, index) => (
-                        <div key={password.id} className={`bg-gray-100 rounded-xl text-wrap break-words relative px-10 py-8 max-h-max h-max ${index === passwords.length - 1 ? 'mb-32' : ''}`}>
+                        <div key={password.id} className={`flex flex-col bg-gray-100 rounded-xl text-wrap break-words relative px-10 py-8 max-h-max h-max ${index === passwords.length - 1 ? 'mb-32' : ''}`}>
                             {password.createdAt && isToday(password.createdAt.seconds) ?
                                 <p className='absolute top-2 right-2 text-sm bg-green-500 text-white px-2 py-1 rounded-xl'>New</p> // Chip indicating created today
                                 : ""}
@@ -168,7 +168,7 @@ function Data() {
                             <p className='text-base font-medium pb-2'>{password.username}</p>
                             <button
                                 onClick={() => toggle()}
-                                className="pb-2 cursor-pointer"
+                                className="pb-2 cursor-pointer text-left"
                                 type="button">
                                 Show Password
                                 <i className="ri-arrow-right-s-line" />
@@ -181,7 +181,7 @@ function Data() {
 
                             <button
                                 onClick={() => deletePassword(password.id)} // Call the deletePassword function when the button is clicked
-                                className="mt-2 bg-red-500 text-white px-4 py-2 rounded text-sm"
+                                className="mt-2 bg-red-500 text-white px-4 py-2 rounded text-sm max-w-44"
                                 type="button">
                                 Delete Password
                             </button>
@@ -205,7 +205,7 @@ function Data() {
                                         </div>
                                         <form className='flex flex-col gap-4'>
                                             <label htmlFor="dob" className="block text-sm text-gray-600">Enter your DOB (dd-mm-yy)</label>
-                                            <input id="dob" className="w-full rounded-lg bg-[transparent] border border-gray-200 p-4 text-sm shadow-sm" type="date" value={dob} onChange={(e) => setDob(e.target.value)} required />
+                                            <input id="dob" className="w-full rounded-lg bg-[transparent] border border-gray-200 p-4 text-sm shadow-sm" type="date" value={dob} onChange={(e) => setDob(e.target.value)} required autoFocus/>
                                             <button className="w-full inline-block rounded-lg bg-[#757493] px-5 py-3 text-sm font-medium text-white"
                                                 onClick={checkDob}>Authenticate</button> {/* Pass the event to the checkDob function */}
 
