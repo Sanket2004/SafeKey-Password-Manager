@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC2OEp7XkaKxJ90h-y-xt9OS78ECpw2dlc",
-  authDomain: "password-manager-ab3f6.firebaseapp.com",
-  projectId: "password-manager-ab3f6",
-  storageBucket: "password-manager-ab3f6.appspot.com",
-  messagingSenderId: "522131556225",
-  appId: "1:522131556225:web:771c41f864063891390a80"
+  apiKey: "AIzaSyCR4eqBHDqPvVkKITfhnF422OObQmvJ_UE",
+  authDomain: "password-manager-2cd2d.firebaseapp.com",
+  projectId: "password-manager-2cd2d",
+  storageBucket: "password-manager-2cd2d.appspot.com",
+  messagingSenderId: "965887187673",
+  appId: "1:965887187673:web:2cfad3296bf9de2a2dfcc8"
 };
 
 

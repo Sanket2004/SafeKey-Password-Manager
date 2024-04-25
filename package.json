@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "base-64": "^1.0.0",
     "firebase": "^10.11.0",
     "md5": "^2.3.0",
     "react": "^18.2.0",

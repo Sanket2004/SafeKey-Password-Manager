@@ -1,7 +1,7 @@
 // AddPasswordForm.jsx
 import React from 'react';
 
-function AddPasswordForm({ handleSubmit, togglePopup, website, setWebsite, password, setPassword }) {
+function AddPasswordForm({ handleSubmit, togglePopup, website, setWebsite, username, setUsername, password, setPassword }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50 backdrop-blur-sm">
       <div className="bg-white p-8 rounded-lg mx-auto max-w-2xl w-full">
@@ -40,6 +40,22 @@ function AddPasswordForm({ handleSubmit, togglePopup, website, setWebsite, passw
                 />
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4 text-gray-400">
                   <i className="ri-pages-line" />
+                </span>
+              </div>
+            </div>
+            <div>
+              <label htmlFor="username" className="sr-only">username</label>
+              <div className="relative">
+                <input
+                  required
+                  type="text"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="w-full rounded-lg border border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                  placeholder="Enter username"
+                />
+                <span className="absolute inset-y-0 end-0 grid place-content-center px-4 text-gray-400">
+                <i className="ri-user-line"></i>
                 </span>
               </div>
             </div>
